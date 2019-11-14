@@ -33,6 +33,14 @@ h2.__white::after{
     background-color: #ffffff;
     margin: 22px auto 29px;
 }
+.icon{
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+._icon{
+    display: none;
+}
 /*-------------------------------benefit block------------------------------*/
 h3{
     font-size: 20px;
@@ -210,8 +218,10 @@ p.sentence__p{
     font-family: 'Raleway',sans-serif;
     font-weight: bold;
     color: #ffffff;
+    font-size: 88px;
 
 }
+
 p.day_price__p{
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
@@ -236,4 +246,36 @@ p.other_block__p{
     color: #86878b;
     padding-top: 11px;
 
+}
+/*--------------------------------- Social Media---------------------------------------*/
+.social_media{
+    height: 105px;
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+}
+.social_media_content{
+    display:flex;
+    flex-direction: row;
+}
+h4.social_media__h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    text-transform: capitalize;
+    padding-top: 17px;
+}
+.social_media__p{
+    padding-top: 4px;
+}
+.social_media_h4_p{
+    padding-left: 13px;
+}
+.social_media_icon{
+    color: #cccccc;
+    font-size: 46px;
+    justify-content: center;
+    margin: 29px auto 0;
+}
+svg.facebook{
+    margin-left: 77px;
 }
