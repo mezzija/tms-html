@@ -15,6 +15,7 @@ h2{
     text-transform: uppercase;
     font-size: 36px;
     color: #212121;
+    text-align: center;
 }
 h2::after{
     content: '';
@@ -64,6 +65,7 @@ h3{
 }
 .benefit__p{
     margin-bottom: 80px;
+    text-align: center;
 }
 .benefit__image_wrap{
     display: inline-flex;
@@ -96,8 +98,8 @@ h3{
     background-size: cover;
 }
 .download__color{
-   background-color: rgba(0,0,0,0.4);
-   height: 320px;
+    background-color: rgba(0,0,0,0.4);
+    height: 320px;
 
 }
 
@@ -115,7 +117,7 @@ h3{
     width: 133px;
     height: 40px;
     margin: 0 auto;
- }
+}
 p.download__p1{
     text-align: center;
     font-family: 'Raleway',sans-serif;
@@ -278,4 +280,39 @@ h4.social_media__h4{
 }
 svg.facebook{
     margin-left: 77px;
+}
+/*---------------------------------forms-------------------------*/
+.contact{
+    padding-top: 97px;
+    height: 612px;
+}
+.name_form{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#bdbdbd;
+    width: 527px;
+    height: 32px;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    border-color: #d6d6d6;
+}
+textarea{
+    margin-left: 67px;
+    resize: none;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    border-color: #d6d6d6;
+}
+.form_direction{
+    display: flex;
+    flex-direction: column;
+}
+.row_contact{
+    display: flex;
+    flex-direction: row;
 }
