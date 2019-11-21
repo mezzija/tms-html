@@ -149,7 +149,7 @@ p._light{
     background-size: cover;
 }
 .contact .container{
-    padding: 101px 0;
+    padding: 101px 0 86px;
 }
 .contact__row{
     margin-bottom: 45px;
@@ -172,35 +172,15 @@ p._light{
 .footer_icon{
     font-size: 24px;
     color: #cccccc;
+    margin: 0 12px;
 }
 .footer_p{
     font-size: 12px;
     color: rgba(255,255,255,.5);
+    margin-top: 7px;
 
 }
 
-/*------------------------ links block-----------------------------*/
-/*.links i{*/
-/*    padding: 0 12px;*/
-/*}*/
-/*p.links__p{*/
-/*    color: #707070;*/
-/*    text-align: center;*/
-/*    font-size: 12px;*/
-/*}*/
-/*.links{*/
-/*    background-color: #000000;*/
-/*    height: 100px;*/
-
-/*}*/
-/*.links__image{*/
-/*    padding-top: 35px;*/
-/*    margin: 0 auto 6px;*/
-/*    text-align: center;*/
-/*    color: #cccccc;*/
-/*    font-size: 24px;*/
-
-/*}*/
 /*-------------------------- pricing block--------------------*/
 /*.pricing_back{*/
 /*    background: #f5f5f5;*/
