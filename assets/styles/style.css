@@ -136,6 +136,28 @@ p._light{
 .header{
     background-color: #000000;
 }
+.header .container{
+    padding: 21px 0;
+}
+.header__logo{
+    height: 27px;
+    width: 79px;
+    background-image: url('../image/logo-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header__content{
+    display: flex;
+    align-items: center;
+}
+.header__p{
+    font-weight: 600;
+    rgba(255,255,255,.69);
+}
+.header__indent{
+    padding: 0 22px;
+}
 .nav{
     background-image: url('../image/city-3.jpg');
     background-repeat: no-repeat;
@@ -162,6 +184,45 @@ p._light{
 }
 .social_media__icon{
     font-size: 48px;
+}
+.tabs__block1{
+    width: 110px;
+    border-bottom: 1px solid #c7c7c7;
+    border-radius: 3px 3px 0 0;
+}
+.tabs__block2{
+    width: 110px;
+    border-bottom: 1px solid #c7c7c7;
+}
+.tabs__block3{
+    width: 110px;
+    border-radius: 0 0 3px 3px;
+}
+
+.tabs__left{
+    text-align: left;
+}
+.tabs__p{
+    font-weight: 700;
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 45px 0;
+}
+.tabs__indent1{
+    padding: 48px 0px 24px;
+}
+.tabs__indent2{
+    padding-bottom: 50px;
+}
+.tabs__img{
+    background-image: url('../image/city2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 22px;
+    width: 320px;
+    height: 254px;
 }
 .benefit__image_wrap{
     display: inline-flex;
@@ -234,6 +295,9 @@ span.pricing__dolor{
     font-size: 34px;
     font-weight: 700;
 }
+.reviews{
+    height: 590px;
+}
 .reviews__border{
     position: relative;
     border: 1px solid #f5f5f5;
@@ -271,6 +335,11 @@ span.pricing__dolor{
     font-weight: bold;
     font-size: 20px;
     color: #333333;
+}
+.reviews__position{
+    position: absolute;
+    left: 32%;
+    bottom: -64%;
 }
 
 .download .container{
@@ -317,36 +386,3 @@ span.pricing__dolor{
     margin-top: 7px;
 
 }
-
-/*--------------------------------- Social Media---------------------------------------*/
-/*.social_media{*/
-/*    height: 105px;*/
-/*    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);*/
-/*}*/
-/*.social_media_content{*/
-/*    display:flex;*/
-/*    flex-direction: row;*/
-/*}*/
-/*h4.social_media__h4{*/
-/*    font-family: 'Open Sans', sans-serif;*/
-/*    font-weight: bold;*/
-/*    font-size: 20px;*/
-/*    color: #000000;*/
-/*    text-transform: capitalize;*/
-/*    padding-top: 17px;*/
-/*}*/
-/*.social_media__p{*/
-/*    padding-top: 4px;*/
-/*}*/
-/*.social_media_h4_p{*/
-/*    padding-left: 13px;*/
-/*}*/
-/*.social_media_icon{*/
-/*    color: #cccccc;*/
-/*    font-size: 46px;*/
-/*    justify-content: center;*/
-/*    margin: 29px auto 0;*/
-/*}*/
-/*svg.facebook{*/
-/*    margin-left: 77px;*/
-/*}*/
