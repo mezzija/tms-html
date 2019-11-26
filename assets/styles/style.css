@@ -74,7 +74,9 @@ textarea{
 button{
     border: none;
     background-color: transparent;
+
 }
+
 .button{
     display: inline-flex;
     align-items: center;
@@ -89,6 +91,31 @@ button{
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 1px 2px 2px #d6d6d6;
+
+
+
+}
+.button_transform-scale{
+    transition: all 300ms ease-in-out 100ms;
+}
+.button_transform-scale:hover{
+    transform: scale(1.5);
+}
+.button_transform-color{
+    transition: all 200ms ease-in-out 100ms;
+}
+._transform-scale-color{
+    transition: all 300ms ease-in-out 100ms;
+}
+._transform-scale-color:hover{
+    transform: scale(1.2);
+
+}
+a:hover{color:var(--primari-color);}
+
+
+.button_transform-color:hover{
+    background-color: transparent;
 }
 .button._outline{
     background-color: transparent;
@@ -252,6 +279,7 @@ span.free{
     border-bottom: 1px solid #c7c7c7;
     cursor: pointer;
 }
+
 .tabs__block3{
     width: 110px;
     border-radius: 0 0 3px 3px;
