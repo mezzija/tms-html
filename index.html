@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="wi">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Axit</title>
 </head>
@@ -19,14 +20,13 @@
     <div class="container row">
         <div class="header__logo"></div>
         <nav class="header__content">
-            <p class="header__indent"><a href="#">Features</a></p>
-            <p class="header__indent"><a href="#">About</a></p>
-            <p class="header__indent"><a href="#">Pricing</a></p>
-            <p class="header__indent"><a href="#">Reviews</a></p>
-            <p class="header__indent"><a href="#">Contact</a></p>
+            <a class="header__indent"  href="#">Features</a>
+            <a class="header__indent"  href="#">About</a>
+            <a class="header__indent" href="#">Pricing</a>
+            <a class="header__indent"  href="#">Reviews</a>
+            <a href="#">Contact</a>
         </nav>
     </div>
-
 </header>
 <section class="main">
     <div class="main__bg">
@@ -34,8 +34,8 @@
             <div class="row">
             <div class="cell">
                 <img src="./assets/image/logo-1.png" alt="logo">
-            <h2 class="_left_white">MODERN AXURE TEMPLATE<br>FOR BEAUTIFUL PROTOTYPES</h2>
-            <p class="_light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br>euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br>accumsan et viverra justo commodo.</p>
+            <h2 class="_left_white main__width-h2">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
+            <p class="_light main__width-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
             <button class="button _outline">Download</button>
             </div>
             <div class="cell main__width _text-center">
@@ -44,9 +44,9 @@
                 </div>
                 <form>
                     <div class="main__border_form">
-                        <input  class="contact__field" type="text" placeholder="Name" name="Name">
-                        <input  class="contact__field" type="email" placeholder="Email" name="email">
-                        <input class="contact__field" type="password" placeholder="Password" name="password">
+                        <input  class="main__field" type="text" placeholder="Name" name="Name">
+                        <input  class="main__field" type="email" placeholder="Email" name="email">
+                        <input class="main__field" type="password" placeholder="Password" name="password">
                     </div>
                     <div>
                     <button class="button main__button_get">Get Started</button>
@@ -68,45 +68,45 @@
         <p>Aenean euismod bibendum laoreet</p>
         </div>
         <svg  class="icon facebook social_media__icon">
-            <use href="#facebook"></use>
+            <a class="media" href="#"><use href="#facebook"></use></a>
         </svg>
         <svg  class="icon social_media__icon">
-            <use href="#twitter"></use>
+            <a class="media" href="#"><use href="#twitter"></use></a>
         </svg>
         <svg  class="icon social_media__icon">
-            <use href="#google"></use>
+            <a class="media" href="#"><use href="#google"></use></a>
         </svg>
         <svg  class="icon social_media__icon">
-            <use href="#pinterest"></use>
+            <a class="media" href="#"><use href="#pinterest"></use></a>
         </svg>
         <svg  class="icon social_media__icon">
-            <use href="#instagram"></use>
+            <a class="media" href="#"><use href="#instagram"></use></a>
         </svg>
         <svg  class="icon social_media__icon">
-            <use href="#stumbleupon"></use>
+            <a class="media" href="#"><use href="#stumbleupon"></use></a>
         </svg>
         <svg  class="icon social_media__icon">
-            <use href="#rss"></use>
+            <a class="media" href="#"><use href="#rss"></use></a>
         </svg>
 
     </div>
 </section>
 <section class="tabs base_bg">
-    <div class="container _text-center">
+    <div class="container ">
         <div class="row">
-            <div class="cell">
-                <div class="tabs__block1 orange_bg"><p class="tabs__p">Tab 1</p></div>
-                <div class="grey_bg tabs__block2"><p class="tabs__p">Tab 2</p></div>
-                <div class="grey_bg tabs__block3"><p class="tabs__p">Tab 3</p></div>
+            <div class="cell _text-center">
+                <div class="tabs__block1 active_bg tabs__text">Tab 1</div>
+                <div class="grey_bg tabs__block2 tabs__text">Tab 2</div>
+                <div class="grey_bg tabs__block3 tabs__text">Tab 3</div>
             </div>
-            <div class="cell tabs__left">
+            <div class="cell text-left tabs__text-width">
                 <h3>Tabs with soft transitioning effect.</h3>
-                <p class="tabs__indent1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra<br> justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque<br> penatibus et magnis dis parturient montes.</p>
-                <p class="tabs__indent2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>bibendum laoreet.</p>
+                <p class="tabs__indent1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                <p class="tabs__indent2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                <button class="button">Download</button>
             </div>
             <div class="cell">
-                <div class="tabs__img"></div>
+                <img class="tabs__img" src="./assets/image/city2.png" alt="city">
             </div>
         </div>
     </div>
@@ -144,40 +144,40 @@
         <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="row">
             <div class="cell">
-                <div class=" grey_bg pricing__border "><p class="pricing__open_sans__p">Basic</p></div>
+                <div class=" grey_bg pricing__border pricing__open_sans ">Basic</div>
                 <div class="grey_bg pricing__border"><p class="pricing__number__p"><span class="pricing__dolor">$</span>0</p></div>
-                <div class="grey_bg"><p class="pricing__period__p">Free for Life</p></div>
-                <div class="orange_bg pricing__height13"></div>
-                <div class="pricing__white_bg pricing__border"><p>1 gb of space</p></div>
-                <div class="pricing__white_bg pricing__border"><p>10 gb of bandwidth</p></div>
-                <div class="pricing__white_bg pricing__border"><p>3 websites</p></div>
-                <div class="pricing__white_bg pricing__border"><p>Basic Customization</p></div>
-                <div class="pricing__white_bg pricing__border"><p>Wordpress integration</p></div>
-                <div class="pricing__white_bg pricing__border"><p>Email support</p></div>
+                <div class="grey_bg pricing__period">Free for Life</div>
+                <div class="active_bg  height pricing__most-popular"></div>
+                <div class="pricing__white_bg pricing__border">1 gb of space</div>
+                <div class="pricing__white_bg pricing__border">10 gb of bandwidth</div>
+                <div class="pricing__white_bg pricing__border">3 websites</div>
+                <div class="pricing__white_bg pricing__border">Basic Customization</div>
+                <div class="pricing__white_bg pricing__border">Wordpress integration</div>
+                <div class="pricing__white_bg">Email support</div>
             </div>
             <div class="cell">
-                <div class=" grey_bg pricing__border"><p class="pricing__open_sans__p">Professional</p></div>
+                <div class=" grey_bg pricing__border pricing__open_sans">Professional</div>
                 <div class="grey_bg pricing__border"><p class="pricing__number__p"><span class="pricing__dolor">$</span>19</p></div>
-                <div class="grey_bg"><p class="pricing__period__p" >Monthly Payment</p></div>
-                <div class="orange_bg pricing_height2"><p class="pricing__open_sans__p">Our most popular</p></div>
-                <div class="pricing__white_bg pricing__border"><p>5 gb of space</p></div>
-                <div class="pricing__white_bg pricing__border"><p>50 gb of bandwidth</p></div>
-                <div class="pricing__white_bg pricing__border"><p>12 websites</p></div>
-                <div class="pricing__white_bg pricing__border"><p>Advanced Customization</p></div>
-                <div class="pricing__white_bg pricing__border"><p>Wordpress integration</p></div>
-                <div class="pricing__white_bg pricing__border"><p>Email support</p></div>
+                <div class="grey_bg pricing__period">Monthly Payment</div>
+                <div class="active_bg pricing__most-popular">Our most popular</div>
+                <div class="pricing__white_bg pricing__border">5 gb of space</div>
+                <div class="pricing__white_bg pricing__border">50 gb of bandwidth</div>
+                <div class="pricing__white_bg pricing__border">12 websites</div>
+                <div class="pricing__white_bg pricing__border">Advanced Customization</div>
+                <div class="pricing__white_bg pricing__border">Wordpress integration</div>
+                <div class="pricing__white_bg ">Email support</div>
             </div>
             <div class="cell">
-                <div class=" grey_bg pricing__border"><p class="pricing__open_sans__p">Enterprise</p></div>
+                <div class=" grey_bg pricing__border pricing__open_sans">Enterprise</div>
                 <div class="grey_bg pricing__border"><p class="pricing__number__p"><span class="pricing__dolor">$</span>70</p></div>
-                <div class="grey_bg"><p class="pricing__period__p">Monthly Payment</p></div>
-                <div class="orange_bg pricing__height13"></div>
-                <div class="pricing__white_bg pricing__border"><p>Unlimited space</p></div>
-                <div class="pricing__white_bg pricing__border"><p>Unlimited bandwidth</p></div>
-                <div class="pricing__white_bg pricing__border"><p>100 websites</p></div>
-                <div class="pricing__white_bg pricing__border"><p>Advanced Customization</p></div>
-                <div class="pricing__white_bg pricing__border"><p>Wordpress integration</p></div>
-                <div class="pricing__white_bg pricing__border"><p>24/7 customer support</p></div>
+                <div class="grey_bg pricing__period">Monthly Payment</div>
+                <div class="active_bg pricing__most-popular height"></div>
+                <div class="pricing__white_bg pricing__border">Unlimited space</div>
+                <div class="pricing__white_bg pricing__border">Unlimited bandwidth</div>
+                <div class="pricing__white_bg pricing__border">100 websites</div>
+                <div class="pricing__white_bg pricing__border">Advanced Customization</div>
+                <div class="pricing__white_bg pricing__border">Wordpress integration</div>
+                <div class="pricing__white_bg ">24/7 customer support</div>
             </div>
         </div>
     </div>
@@ -187,25 +187,45 @@
     <p class="_indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div class="row">
         <div class="cell">
-            <div class="reviews__border"><p class="reviews__border__text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque<br> quo suscipit.</p>
+            <div class="reviews__border">
+                <p class="reviews__border__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
             </div>
             <div class="reviews__position">
-                <img src="./assets/image/face.jpg" alt="face">
-                <p></p>
+                <div>
+                    <img src="./assets/image/face.jpg" alt="face">
+                 </div>
+                <div class="text-left reviews__text-position ">
+                    <h3>Jeremy H.</h3>
+                    <p>Manager</p>
+                </div>
             </div>
         </div>
         <div class="cell">
-            <div class="reviews__border"><p class="reviews__border__text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque<br> quo suscipit.</p>
+            <div class="reviews__border">
+                <p class="reviews__border__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
             </div>
             <div class="reviews__position">
-                <img src="./assets/image/face.jpg" alt="face">
+                <div >
+                    <img src="./assets/image/face.jpg" alt="face">
+                </div>
+                <div class="text-left reviews__text-position ">
+                    <h3>Jeremy H.</h3>
+                    <p>Manager</p>
+                </div>
             </div>
         </div>
         <div class="cell">
-            <div class="reviews__border"><p class="reviews__border__text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque<br> quo suscipit.</p>
+            <div class="reviews__border">
+                <p class="reviews__border__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
             </div>
             <div class="reviews__position">
-                <img src="./assets/image/face.jpg" alt="face">
+                <div>
+                    <img src="./assets/image/face.jpg" alt="face">
+                </div>
+                <div class="text-left reviews__text-position ">
+                    <h3>Jeremy H.</h3>
+                    <p>Manager</p>
+                </div>
             </div>
         </div>
     </div>
@@ -243,25 +263,25 @@
 <footer class="footer _text-center">
     <div class="container ">
         <svg class="footer__icon icon ">
-            <use href="#facebook"></use>
+            <a class="media" href="#"><use href="#facebook"></use></a>
         </svg>
         <svg class="footer__icon icon ">
-            <use href="#twitter"></use>
+            <a class="media" href="#"><use href="#twitter"></use></a>
         </svg>
         <svg class="footer__icon icon ">
-            <use href="#google"></use>
+            <a class="media" href="#"><use href="#google"></use></a>
         </svg>
         <svg class="footer__icon icon ">
-            <use href="#pinterest"></use>
+            <a class="media" href="#"><use href="#pinterest"></use></a>
         </svg>
         <svg class="footer__icon icon ">
-            <use href="#instagram"></use>
+            <a class="media" href="#"><use href="#instagram"></use></a>
         </svg>
         <svg class="footer__icon icon ">
-            <use href="#stumbleupon"></use>
+            <a class="media" href="#"><use href="#stumbleupon"></use></a>
         </svg>
         <svg class="footer__icon icon ">
-            <use href="#rss"></use>
+            <a class="media" href="#"><use href="#rss"></use></a>
         </svg>
         <p class="footer__title">© 2015 Axure Themes</p>
     </div>

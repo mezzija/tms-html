@@ -100,6 +100,9 @@ button{
 ._text-center{
     text-align: center;
 }
+.text-left{
+    text-align: left;
+}
 .row{
     display: flex;
     justify-content: space-between;
@@ -122,11 +125,10 @@ button{
 .icon{
     width: 1em;
     height: 1em;
+}
+.media {
     fill: currentColor;
     color: #cccccc;
-}
-.social_media a{
-
 }
 .base_bg{
     background-color: #f5f5f5;
@@ -134,11 +136,9 @@ button{
 .grey_bg{
     background-color: var(--anoter_bg_color);
 }
-.orange_bg{
+.active_bg{
     background-color: var(--primari-color);
 }
-
-
 p._light{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -167,7 +167,7 @@ p._light{
     align-items: center;
 }
 .header__indent{
-    padding: 0 22px;
+    padding: 0 27px;
 }
 .header a{
     font-weight: 600;
@@ -182,7 +182,14 @@ p._light{
 .main__bg{
     background-color: rgba(0,0,0,.52);
 }
+.main__width-h2{
+    width: 540px;
+}
+.main__width-p{
+    width: 500px;
+}
 .main__width{
+    margin-top:30px;
     width: 400px;
 }
 .main__border_try{
@@ -197,8 +204,8 @@ p._light{
 .main__border_form{
     background-color: #ffffff;
     padding: 14px 0;
-
 }
+
 span.free{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -206,7 +213,7 @@ span.free{
     color: var(--primari-color);
     text-transform: uppercase;
 }
-.main .contact__field{
+.main__field{
     width: 80%;
     margin: 18px 0;
 }
@@ -238,40 +245,36 @@ span.free{
     width: 110px;
     border-bottom: 1px solid #c7c7c7;
     border-radius: 3px 3px 0 0;
+    cursor: pointer;
 }
 .tabs__block2{
     width: 110px;
     border-bottom: 1px solid #c7c7c7;
+    cursor: pointer;
 }
 .tabs__block3{
     width: 110px;
     border-radius: 0 0 3px 3px;
+    cursor: pointer;
 }
-
-.tabs__left{
-    text-align: left;
-}
-.tabs__p{
+.tabs__text{
     font-weight: 700;
     font-size: 15px;
     color: #ffffff;
     text-transform: uppercase;
     padding: 45px 0;
 }
+.tabs__text-width{
+    width: 520px;
+}
 .tabs__indent1{
-    padding: 48px 0px 24px;
+    padding: 48px 0 24px;
 }
 .tabs__indent2{
     padding-bottom: 50px;
 }
-.tabs__img{
-    background-image: url('../image/city2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.tabs__img {
     margin-top: 22px;
-    width: 320px;
-    height: 254px;
 }
 .benefit__image_wrap{
     display: inline-flex;
@@ -300,21 +303,20 @@ span.free{
 .pricing__border{
     border-bottom: 1px solid #f5f5f5;
 }
-.pricing__height13{
-    height: 5px;
-}
-.pricing_height2 .pricing__open_sans__p{
-    height: 40px;
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 9px 0;
-}
 .pricing__white_bg{
     padding: 11px 0;
     background-color: var(--white-color);
     text-transform: uppercase;
 }
-p.pricing__open_sans__p{
+.pricing__most-popular{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 11px 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+.pricing__open_sans{
     padding: 16px 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -324,10 +326,15 @@ p.pricing__open_sans__p{
 p.pricing__number__p{
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
-    font-size: 85px;
+    line-height: 37px;
+    padding: 34px 0 7px;
+    font-size: 95px;
     color: #ffffff;
 }
-p.pricing__period__p{
+.height{
+    padding: 3px 0;
+}
+.pricing__period{
     padding: 16px 0;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
@@ -349,28 +356,28 @@ span.pricing__dolor{
     height: 132px;
     text-align: left;
 }
-.reviews__border__text::after{
-    content:'';
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid red ;
-}
 .reviews__border__text{
     position: relative;
-    padding: 18px 10px;
+    padding: 18px 17px;
     font-style: italic;
 }
-.reviews__position{
-    display: flex;
-}
-.triangle_down {
+.reviews__border__text::after{
+    content:'';
+    position: absolute;
+    bottom: -15px;
+    left: 25px;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 15px solid #f5f5f5 ;
+    border-top: 15px solid #f5f5f5;
+}
+.reviews__position{
+    margin-top: 22px;
+    display: flex;
+}
+.reviews__text-position{
+    padding: 10px 10px;
 }
 .download .container{
     padding: 68px 0;
