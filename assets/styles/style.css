@@ -1,13 +1,24 @@
 @import url('fonts.css');
 @import url('font-awesome.all.min.css');
+:root{
+    --anoter_bg_color:#333333;
+    --primari-color: #ff8b38;
+    --white-color:#ffffff
+}
 *{
     margin: 0;
     font-weight: 400;
-}
-body{
-    font-family: 'Open Sans',sans-serif;
-    color: #86878b;
     font-size: 14px;
+    font-family: 'Open Sans',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    color: #86878b;
+
+}
+a{
+    text-decoration: none;
 
 }
 h2{
@@ -15,6 +26,12 @@ h2{
     text-transform: uppercase;
     font-size: 36px;
     color: #212121;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
 }
 h2::after{
     content: '';
@@ -25,27 +42,93 @@ h2::after{
     margin: 22px auto 24px;
 }
 h2.__white{
-    text-align: center;
     color: #ffffff;
-
 }
 h2.__white::after{
     background-color: #ffffff;
     margin: 22px auto 29px;
 }
-.icon{
-    width: 1em;
-    height: 1em;
-    fill: currentColor;
+h2._left_white{
+    color: #ffffff;
+    text-align: left;
+    margin-top: 22px;
 }
-._icon{
-    display: none;
+h2._left_white::after{
+    background-color: #ffffff;
+    text-align: left;
+    margin: 32px 0 34px ;
 }
-/*-------------------------------benefit block------------------------------*/
-h3{
-    font-size: 20px;
-    font-weight: 700;
-    color: #333333;
+input,textarea,button{
+    outline: none;
+}
+input,textarea{
+    padding: 10px 12px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+}
+textarea{
+    line-height: 1.4;
+    resize: none;
+}
+button{
+    border: none;
+    background-color: transparent;
+
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 2px solid #ff9b51;
+    background-color: #ff9b51;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 135px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px #d6d6d6;
+
+
+
+}
+.button_transform-scale{
+    transition: all 300ms ease-in-out 100ms;
+}
+.button_transform-scale:hover{
+    transform: scale(1.5);
+}
+.button_transform-color{
+    transition: all 200ms ease-in-out 100ms;
+}
+._transform-scale-color{
+    transition: all 300ms ease-in-out 100ms;
+}
+._transform-scale-color:hover{
+    transform: scale(1.2);
+
+}
+a:hover{color:var(--primari-color);}
+
+
+.button_transform-color:hover{
+    background-color: transparent;
+}
+.button._outline{
+    background-color: transparent;
+    border-radius: 0;
+    border-color: #ffffff;
+    box-shadow: none;
+}
+
+._text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
 }
 .row{
     display: flex;
@@ -55,15 +138,171 @@ h3{
 .cell{
     padding: 0 20px;
 }
-.benefit{
-    padding: 110px 0;
-}
 .container{
     max-width: 1110px;
     margin: 0 auto;
+    padding: 110px 0;
 }
-.benefit__p{
+._indent{
     margin-bottom: 80px;
+}
+._icon{
+    display: none;
+}
+.icon{
+    width: 1em;
+    height: 1em;
+}
+.media {
+    fill: currentColor;
+    color: #cccccc;
+}
+.base_bg{
+    background-color: #f5f5f5;
+}
+.grey_bg{
+    background-color: var(--anoter_bg_color);
+}
+.active_bg{
+    background-color: var(--primari-color);
+}
+p._light{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(255,255,255,.8);
+    margin-bottom: 33px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+.header{
+    background-color: #000000;
+}
+.header .container{
+    padding: 21px 0;
+}
+.header__logo{
+    height: 27px;
+    width: 79px;
+    background-image: url('../image/logo-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header__content{
+    display: flex;
+    align-items: center;
+}
+.header__indent{
+    padding: 0 27px;
+}
+.header a{
+    font-weight: 600;
+    color: rgba(255,255,255,.69);
+}
+.main{
+    background-image: url('../image/city-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main__bg{
+    background-color: rgba(0,0,0,.52);
+}
+.main__width-h2{
+    width: 540px;
+}
+.main__width-p{
+    width: 500px;
+}
+.main__width{
+    margin-right: 10px;
+    margin-top:30px;
+    width: 400px;
+}
+.main__border_try{
+    border-radius: 3px 3px 0 0;
+    background-color: #f5f5f5;
+}
+.main h3{
+    color: #333333;
+    text-transform: capitalize;
+    padding: 13px 0;
+}
+span.free{
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 700;
+     font-size: 20px;
+     color: var(--primari-color);
+     text-transform: uppercase;
+ }
+.main__border_form{
+    background-color: #ffffff;
+    padding: 14px 0;
+}
+.main__field{
+    width: 80%;
+    margin: 18px 0;
+}
+.main__button_get{
+    height: 54px;
+    width: 360px;
+    box-shadow: none;
+    border-radius: 0 0 3px 3px;
+}
+.social_media{
+    box-shadow: 0 1px 3px rgba(0,0,0,.38);
+    position: relative;
+}
+.social_media .container{
+    padding: 18px 0;
+}
+.social_media__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social_media__h3{
+    margin-bottom: 3px;
+}
+.social_media__icon{
+    font-size: 48px;
+}
+.tabs__block1{
+    width: 110px;
+    border-bottom: 1px solid #c7c7c7;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
+}
+.tabs__block2{
+    width: 110px;
+    border-bottom: 1px solid #c7c7c7;
+    cursor: pointer;
+}
+
+.tabs__block3{
+    width: 110px;
+    border-radius: 0 0 3px 3px;
+    cursor: pointer;
+}
+.tabs__text{
+    font-weight: 700;
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 45px 0;
+}
+.tabs__text-width{
+    width: 520px;
+}
+.tabs__indent1{
+    padding: 48px 0 24px;
+}
+.tabs__indent2{
+    padding-bottom: 50px;
+}
+.tabs__img {
+    margin-top: 22px;
 }
 .benefit__image_wrap{
     display: inline-flex;
@@ -75,7 +314,6 @@ h3{
     align-items: center;
     justify-content: center;
 
-
 }
 .benefit__h3{
     margin-bottom: 22px;
@@ -84,198 +322,130 @@ h3{
     color: #ff8b38;
     font-size: 32px;
 }
-.benefit{
-    text-align: center;
+.pricing .row{
+    align-items: flex-end;
 }
-/*-------------------------------- download block--------------------------------*/
-.download__image{
-    height: 320px;
+.pricing .cell{
+    width: 384px;
+}
+.pricing__border{
+    border-bottom: 1px solid #f5f5f5;
+}
+.pricing__white_bg{
+    padding: 11px 0;
+    background-color: var(--white-color);
+    text-transform: uppercase;
+}
+.pricing__most-popular{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 11px 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+.pricing__open_sans{
+    padding: 16px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+}
+p.pricing__number__p{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    line-height: 37px;
+    padding: 34px 0 7px;
+    font-size: 95px;
+    color: #ffffff;
+}
+.height{
+    padding: 3px 0;
+}
+.pricing__period{
+    padding: 16px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(255,255,255,.5);
+
+}
+span.pricing__dolor{
+    font-family: 'Raleway',sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+.reviews__border{
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    width: 273px;
+    height: 132px;
+    text-align: left;
+}
+.reviews__border__text{
+    position: relative;
+    padding: 18px 17px;
+    font-style: italic;
+}
+.reviews__border__text::after{
+    content:'';
+    position: absolute;
+    bottom: -15px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #f5f5f5;
+}
+.reviews__position{
+    margin-top: 22px;
+    display: flex;
+}
+.reviews__text-position{
+    padding: 10px 10px;
+}
+.download .container{
+    padding: 68px 0;
+}
+.download__bg{
+    background-color: rgba(0,0,0,.4);
+}
+.download{
     background-image: url('../image/city.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.download__color{
-   background-color: rgba(0,0,0,0.4);
-   height: 320px;
-
+.contact .container{
+    padding: 101px 0 86px;
 }
-
-.download__text{
-    padding: 66px 0;
+.contact__row{
+    margin-bottom: 45px;
 }
-.download__wrap1{
-    border: 1px solid #f5f5f5;
-    width: 135px;
-    height: 42px;
-    margin: 0 auto;
-}
-.download__wrap2{
-    border: 1px solid #d9dbd7;
-    width: 133px;
-    height: 40px;
-    margin: 0 auto;
- }
-p.download__p1{
-    text-align: center;
-    font-family: 'Raleway',sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #afaca7;
-    margin-bottom: 33px;
-}
-p.download__p2{
-    text-align: center;
-    font-weight: 600;
-    font-size: 15px;
-    color: #ffffff;
-    padding: 10px
-
-}
-/*------------------------ links block-----------------------------*/
-.links i{
-    padding: 0 12px;
-}
-p.links__p{
-    color: #707070;
-    text-align: center;
-    font-size: 12px;
-}
-.links{
-    background-color: #000000;
-    height: 100px;
-
-}
-.links__image{
-    padding-top: 35px;
-    margin: 0 auto 6px;
-    text-align: center;
-    color: #cccccc;
-    font-size: 24px;
-
-}
-/*-------------------------- pricing block--------------------*/
-.pricing_back{
-    background: #f5f5f5;
-    height: 883px;
-    text-align: center;
-}
-.pricing{
-    padding-top: 109px;
-
-}
-.pricing_row{
+.contact__cell{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
-
+    width: 50%;
 }
-.description{
-    height: 59px;
-    background: #333333;
-    border-bottom: 1px solid #f5f5f5;
-
+.contact__field{
+    width: 100%;
 }
-.pricing__table{
-    width: 343px;
-
+.footer{
+    background-color: #000000;
 }
-.sentence{
-    height: 100px;
-    background: #333333;
-    border-bottom: 1px solid #f5f5f5;
-
+.footer .container{
+    padding: 37px 0 13px;
 }
-.day_price{
-    height: 51px;
-    background: #333333;
+.footer__icon{
+    font-size: 24px;
+    margin: 0 12px;
 }
-.orange__line13{
-    height: 5px;
-    background: #ff8b38;
-}
-.orange__line2{
-    height:40px;
-    background: #ff8b38;
-}
-.other_block{
-    background: #ffffff;
-    height: 40px;
-    border-bottom: 1px solid #f5f5f5;
-
-
-}
-p.description_p{
-    font-family: "Open Sans",sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: #ffffff;
-    padding-top: 17px;
-
-}
-p.sentence__p{
-    font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 88px;
-
-}
-
-p.day_price__p{
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 14px;
-    color: #999999;
-    padding-top: 14px;
-}
-p.orange__line2__p{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding-top: 10px;
-}
-p.other_block__p{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #86878b;
-    padding-top: 11px;
-
-}
-/*--------------------------------- Social Media---------------------------------------*/
-.social_media{
-    height: 105px;
-    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
-}
-.social_media_content{
-    display:flex;
-    flex-direction: row;
-}
-h4.social_media__h4{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: #000000;
-    text-transform: capitalize;
-    padding-top: 17px;
-}
-.social_media__p{
-    padding-top: 4px;
-}
-.social_media_h4_p{
-    padding-left: 13px;
-}
-.social_media_icon{
-    color: #cccccc;
-    font-size: 46px;
-    justify-content: center;
-    margin: 29px auto 0;
-}
-svg.facebook{
-    margin-left: 77px;
+.footer__title{
+    font-size: 12px;
+    color: rgba(255,255,255,.5);
+    margin-top: 7px;
 }
